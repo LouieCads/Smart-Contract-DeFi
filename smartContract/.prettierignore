@@ -1,0 +1,17 @@
+# Ignore build artifacts
+build/
+dist/
+coverage/
+
+# Ignore all HTML files
+*.html
+
+# Ignore specific configuration files
+package.json
+config/*.json
+
+# Ignore all Markdown files in the docs directory
+docs/**/*.md
+
+# Ignore all files in the node_modules directory
+node_modules/
