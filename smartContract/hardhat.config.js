@@ -7,8 +7,29 @@ require("dotenv").config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.28",
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.28",
+      },
+      {
+        version: "0.6.12",
+      },
+      {
+        version: "0.6.0",
+      },
+      {
+        version: "0.6.6",
+      },
+    ],
+  },
   networks: {
+    hardhat: {
+      chainId: 31337,
+      forking: {
+        url: process.env.MAINNET_RPC_URL || "",
+      },
+    },
     sepolia: {
       url: process.env.SEPOLIA_RPC_URL || "",
       accounts: [process.env.PRIVATE_KEY1, process.env.PRIVATE_KEY2],

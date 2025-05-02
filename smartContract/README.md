@@ -1,6 +1,8 @@
 # Decentralize Finance
 
-1. Deposit Collateral
+1. Deposit collateral: ETH/WETH ✅
+2. Borrow another asset: $DAI
+3. Repay $DAI
 
 This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
